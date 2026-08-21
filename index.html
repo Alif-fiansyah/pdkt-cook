@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hehe</title>
+
+  <!-- Open Graph Meta Tags (Agar preview link di DM IG/WA muncul gambar & judul) -->
+  <meta property="og:title" content="Hehe">
+  <meta property="og:description" content="Pindah WhatsApp Aja Ga Si?">
+  <meta property="og:image" content="kucing.jpg"> <!-- Ganti URL foto meme kamu -->
+  <meta property="og:type" content="website">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#121212] text-white flex items-center justify-center min-h-screen px-4 font-sans">
+  <div class="bg-[#1e1e1e] p-6 rounded-2xl w-full max-w-sm border border-neutral-800 text-center shadow-xl">
+    
+    <!-- Foto / Meme -->
+    <img src="kucing.jpg" alt="Meme" class="w-24 h-24 rounded-2xl mx-auto mb-4 object-cover">
+    
+    <h1 class="text-xl font-bold mb-1">Pindah WhatsApp Aja Ga Si?</h1>
+    <p class="text-xs text-neutral-400 mb-6">hehehehehehehehe</p>
+
+    <!-- Form Pengiriman -->
+    <form action="https://api.web3forms.com/submit" method="POST" class="text-left space-y-4">
+      <!-- Masukkan Access Key Web3Forms kamu -->
+      <input type="hidden" name="access_key" value="MASUKKAN_ACCESS_KEY_DISINI">
+      <input type="hidden" name="subject" content="Someone shared their phone number with you">
+
+      <div>
+        <label class="text-xs text-neutral-400 block mb-1">Preferable contact name</label>
+        <input type="text" name="name" placeholder="untuk di contact ku" required
+          class="w-full bg-[#121212] border border-neutral-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-white">
+      </div>
+
+      <div>
+        <label class="text-xs text-neutral-400 block mb-1">Nomor WhatsApp</label>
+        <input type="tel" name="whatsapp" placeholder="08xxxxxxxxxx" required
+          class="w-full bg-[#121212] border border-neutral-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-white">
+      </div>
+
+      <button type="submit" 
+        class="w-full bg-white text-black font-semibold py-2.5 rounded-lg text-sm hover:bg-neutral-200 transition mt-2">
+        Submit
+      </button>
+    </form>
+  </div>
+</body>
+</html>
